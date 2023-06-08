@@ -1,4 +1,4 @@
 Integrantes:
-  Califano, Francisco
-  García, Valentino
-  Poletti, Ian
+  - Califano Francisco
+  - García Valentino
+  - Poletti Ian
