@@ -1,4 +1,4 @@
 Participantes:
-  Califano Francisco
-  Malitto Franco
-  Poletti Ian
+- Califano Francisco
+- Malitto Franco
+- Poletti Ian
