@@ -14,10 +14,13 @@ personas.
 
 ### Done:
     Reconocer caras y enmarcarlas
-
-### TODO:
     Recortar y guardar fotos
 
+### TODO:
+    Detectar genero
+    Detectar edad
+    Detectar estado de animo
+    
 ### Plegarias:
 
     أنا أكره بيرو
