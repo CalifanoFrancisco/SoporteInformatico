@@ -1,19 +1,19 @@
-Integrantes:
+### Integrantes:
     - Califano
     - Malitto
     - Poletti
 
-Consigna:
+### Consigna:
     En grupos de 3 integrantes, realizar un programa en 
 Python el cual puedo reconocer, recortar y guardar las 
 caras de las personas presentes en una foto.
 
-Done:
+### Done:
     Reconocer caras y enmarcarlas
 
-TODO:
+### TODO:
     Recortar y guardar fotos
 
-Plegarias:
+### Plegarias:
 
     أنا أكره بيرو
