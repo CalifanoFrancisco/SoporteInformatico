@@ -23,7 +23,7 @@ def clasificador(image_path):
     # if no faces detected return
     if len(faces) == 0: return
     
-    faces_information = DeepFace.analyze(img_path = image_path, actions=['emotion', 'gender'])
+    faces_information = DeepFace.analyze(img_path = image_path, actions=['emotion', 'gender', 'age'])
 
     # if models find different amount of faces
     if len(faces) != len(faces_information):
@@ -42,7 +42,8 @@ def clasificador(image_path):
        cv2.putText(
             img,
             'Gender:' + faces_information[i]['dominant_gender'] + ' ' +
-            'Mood:'   + faces_information[i]['dominant_emotion'],
+            'Mood:'   + faces_information[i]['dominant_emotion'] + ' ' +
+            'Age:'    + str(faces_information[i]['age']),
             (x, y - 10),
             cv2.FONT_HERSHEY_SIMPLEX,
             0.9,
