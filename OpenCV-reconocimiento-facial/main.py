@@ -1,7 +1,12 @@
-from clasificador import detectorDeCaras
+from clasificador import clasificador
 from renderer import render
 
-imagePath = './test_images/' + 'personas.jpg'
 
-render(detectorDeCaras(imagePath))
-# gender, mood and face detector using OpenCV and Python
+image_path = 'test_images/' + 'personas.jpg'
+
+img = clasificador(image_path)
+
+render(img)
+
+
+

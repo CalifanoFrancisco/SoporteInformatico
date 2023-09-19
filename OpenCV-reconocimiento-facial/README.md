@@ -12,15 +12,7 @@ personas presentes en una foto.
 Detectar el estado de ánimo, edad aproximada y sexo de las 
 personas.
 
-### Done:
-    Reconocer caras y enmarcarlas
-    Recortar y guardar fotos
 
-### TODO:
-    Detectar genero
-    Detectar edad
-    Detectar estado de animo
-    
 ### Plegarias:
 
     أنا أكره بيرو
