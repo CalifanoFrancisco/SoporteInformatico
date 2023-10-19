@@ -4,8 +4,8 @@
 - Poletti Ian
 - Malitto Franco
 
-### Docs
+## Docs
 detector.py getHandMove() -> dice que gesto está haciendo la mano
 
-### TODO:
+## TODO:
 que la computadora juegue en contra del usuario
