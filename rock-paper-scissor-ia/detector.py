@@ -8,8 +8,7 @@ mpHands = mp.solutions.hands
 hands   = mpHands.Hands()
 mpDraw  = mp.solutions.drawing_utils
 
-
-def getHandMove(hand_landmarks) -> str:
+def getHandMove(hand_landmarks, handLms) -> str:
     landmarks = hand_landmarks.landmark
     if all([handLms.landmark[i].y < handLms.landmark[i + 3].y for i in range(9, 20, 4)]):
         return "rock"
@@ -18,14 +17,13 @@ def getHandMove(hand_landmarks) -> str:
     else:
         return "paper"
 
-
-while True:
+def detectHandGesture() :
     success, image = cap.read();
-
+    
     if not success:
         print("    <{@}> Camera not found");
         exit(1);
-    
+        
     imageRGB = cv2.cvtColor(
         src=image, 
         code=cv2.COLOR_BGR2RGB
@@ -35,7 +33,7 @@ while True:
     if results.multi_hand_landmarks:
         for handLms in results.multi_hand_landmarks:
             for _id, lm in enumerate(handLms.landmark):
-
+            
                 h, w, c = image.shape;
                 cx, cy = int(lm.x * w), int(lm.y * h);
 
@@ -53,7 +51,4 @@ while True:
                         mpHands.HAND_CONNECTIONS
                     );
 
-                    print(getHandMove(handLms));
-
-    cv2.imshow("Output", image);
-    cv2.waitKey(1);
+                    return [getHandMove(handLms, handLms), image];
